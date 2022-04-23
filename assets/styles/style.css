@@ -183,6 +183,31 @@ p{
     color: var(--main-color);
 }
 
+.page-hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    background-image: url(../images/warehouse-bg.jpg);
+    position: relative;
+    padding-top: 111px;
+    padding-bottom: 110px
+}
+.page-hero .bg-overlay {
+    background: rgba(255,255,255,0.9);
+}
+.bg-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.page-hero .container {
+    position: relative;
+}
+
 
 /* botones */
 .button {
