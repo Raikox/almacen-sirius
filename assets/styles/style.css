@@ -19,6 +19,7 @@
     --header-color: #191919;
     --paragraph-font-size-desktop: 20px;
     --paragraph-font-size-mobile: 16px;
+
 }
 body {
     color: var(--paragraph-color);
@@ -52,9 +53,14 @@ p{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.mail-image {
+.mail-image-one {
     max-width: 180px;
 }
+.mail-image-two {
+    max-width: 230px;
+}
+
+
 .background-black {
     background-color: var(--header-color);
 }
@@ -76,12 +82,22 @@ p{
 .left-padding-10 {
     padding-left: 10px;
 }
+.left-padding-20 {
+    padding-left: 20px;
+}
 .left-margin-10 {
     margin-left: 10px;
+}
+.left-margin-20 {
+    margin-left: 20px;
 }
 .top-bottom-padding-15 {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+.top-bottom-padding-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .left-right-margin-30 {
     margin-left: 30px;
@@ -90,8 +106,14 @@ p{
 .top-margin-16 {
     margin-top: 16px;
 }
+.top-margin-20 {
+    margin-top: 20px;
+}
 .top-margin-100 {
     margin-top: 100px;
+}
+.bottom-margin-1rem{
+    margin-bottom: 1rem;
 }
 .top-bottom-padding-100 {
     padding-top: 100px;
@@ -120,6 +142,7 @@ p{
 }
 .background-about-us {
     background: linear-gradient(90deg, rgba(41,136,70,0.7372082622111344) 0%, rgba(41,136,70,0.8436508392419468) 100%), url(../images/mundi2-bg.jpg) 0 0 / cover no-repeat;
+    background-position: center;
 }
 .about > h2 {
     color: var(--header-color);
@@ -137,11 +160,26 @@ p{
 }
 .footer-menu > li > a {
     color: white;
-    font-size: 16px;
+    font-size: var(--paragraph-font-size-mobile);
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .footer-menu > li > a:hover {
+    color: var(--main-color);
+}
+.footer-text-size {
+    font-size: var(--paragraph-font-size-mobile);
+}
+.mail-image-one-footer {
+    min-width: 230px;
+}
+.mail-image-two-footer {
+    min-width: 310px;
+}
+.footer-icon {
+    color: white;
+}
+.footer-icon:hover {
     color: var(--main-color);
 }
 
@@ -186,8 +224,9 @@ p{
     width: 18rem;
     color: var(--paragraph-color);
     top: 0;
+    border: 1px solid rgba(97, 103, 113, 0.6);
 }
-.card-tittle {
+.card-text {
     color: var(--header-color);
 }
 .card:hover:before {
@@ -198,8 +237,8 @@ p{
     box-shadow: 0px 4px 8px rgba(41, 136, 70, 0.3);
     top: -4px;
     background-color: white;
-    color: var(--paragraph-color);
-    border: 1px solid rgba(41, 136, 70, 0.3);
+    color: var(--main-color);
+    border: 1px solid rgba(41, 136, 70, 0.6);
 }
 
 /* accordeon */
@@ -394,6 +433,10 @@ input[name='panel']:checked + .collapsible {
         min-width: 250px;
         width: 340px;
     }
+    .footer-column-container {
+        min-width: 300px;
+        margin-top: 20px;
+    }
 
 }
 
@@ -421,6 +464,9 @@ input[name='panel']:checked + .collapsible {
     .footer-logo-size {
         width: 200px;
         min-width: 100px;
+    }
+    .footer-top-margin {
+        margin-top: 20px;
     }
 
     /* menu hamburguesa*/
@@ -632,6 +678,12 @@ input[name='panel']:checked + .collapsible {
     }
     /* fin menu */
 
+    .card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 25rem;
+
+    }
     .right-no-margin {
         margin-right: 0;
     }
