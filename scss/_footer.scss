@@ -1,0 +1,88 @@
+/* GENERAL FOOTER */
+
+.footer-menu {
+  text-decoration: none;
+  padding-left: 0;
+  li {
+    a {
+      color: white;
+      font-size: $paragraph-font-size-mobile;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+}
+
+.footer-text-size {
+  font-size: $paragraph-font-size-mobile;
+}
+
+.mail-image-one-footer {
+  min-width: 230px;
+}
+
+.mail-image-two-footer {
+  min-width: 310px;
+}
+
+.footer-icon {
+  color: white;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+/* footer phone */
+@media (max-width: 575px) {
+
+  .footer-logo-size {
+    width: 150px;
+    min-width: 100px;
+  }
+
+  .footer-column-container {
+    min-width: 300px;
+    margin-top: 20px;
+  }
+
+}
+
+/* footer tablet */
+@media (min-width: 576px) and (max-width: 991px) {
+
+  .footer-column-container {
+    min-width: 300px;
+    margin-top: 20px;
+  }
+
+  .footer-logo-size {
+    width: 200px;
+    min-width: 100px;
+  }
+
+  .footer-top-margin {
+    margin-top: 20px;
+  }
+
+}
+
+/* footer desktop */
+@media (min-width: 992px) {
+
+  .footer-logo-size {
+    width: 200px;
+    min-width: 100px;
+  }
+
+}
+
+
+
+
+
+
+
