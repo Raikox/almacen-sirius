@@ -19,9 +19,9 @@ Website for Warehaouse presentation.
 - Litte adjust on media queries.
 
 ### 04-22-2022 Bootstrap
--Bootstrap implementation.
--Use particle efects on hero.
--Iconify library implementation
+- Bootstrap implementation.
+- Use particle efects on hero.
+- Iconify library implementation
 
 
 <!--By John Kevin Montes De Oca Vizcarra-->
