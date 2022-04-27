@@ -11,7 +11,7 @@ Website for Warehaouse presentation.
 * JavaScript (particles): https://github.com/VincentGarreau/particles.js/ 
 * Iconify MaterialUI Library: https://icon-sets.iconify.design/
 
-##Changelog
+## Changelog
 
 ### 04-27-2022 Sass
 - Full Sass implementation on website.
