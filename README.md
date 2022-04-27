@@ -24,4 +24,4 @@ Website for Warehaouse presentation.
 -Iconify library implementation
 
 
-/*By John Kevin Montes De Oca Vizcarra*/
+<!--By John Kevin Montes De Oca Vizcarra-->
