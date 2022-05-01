@@ -26,6 +26,16 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  @extend h1;
+  font-size: $title-font-size-desktop;
+}
+
+h3 {
+  font-weight: 400;
+  color: $secondary-color;
+}
+
 p {
   margin-top: 16px;
   text-align: center;
@@ -43,13 +53,18 @@ a {
   text-decoration: none;
 }
 
-p {
-  margin-top: 16px;
-  text-align: center;
+.fix-full-row {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
 }
 
 .main-color {
   color: $main-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
 }
 
 /* background */
@@ -57,9 +72,33 @@ p {
   background-color: $secondary-color;
 }
 
+.background-main-color {
+  background-color: $main-color;
+}
+
+.background-main-color-opacity {
+  background-color: $main-color-opacity;
+}
+
+.fix {
+  display: flex;
+  align-content: center;
+}
+
 .background-building {
   /*background: linear-gradient(90deg, rgba(217,230,221,0.5243231081495099) 0%, rgba(246,247,246,0.8604575619310224) 100%), url(../images/building-bg.jpg) 0 0 / cover no-repeat;*/
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(234,236,198,.7), rgba(255, 255, 255, 0.8), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url(../images/building-bg.jpg) 0 0 / cover no-repeat;
+}
+
+.background-warehouse {
+  /*background: linear-gradient(90deg, rgba(217,230,221,0.5243231081495099) 0%, rgba(246,247,246,0.8604575619310224) 100%), url(../images/building-bg.jpg) 0 0 / cover no-repeat;*/
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(234,236,198,.7), rgba(255, 255, 255, 0.8), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url(../images/warehouse-bg.jpg) 0 0 / cover no-repeat;
+}
+
+.background-warehouse-2 {
+  /*background: linear-gradient(90deg, rgba(217,230,221,0.5243231081495099) 0%, rgba(246,247,246,0.8604575619310224) 100%), url(../images/building-bg.jpg) 0 0 / cover no-repeat;*/
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(241, 241, 241, 0.8), rgba(255, 255, 255, 0.8), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url(../images/warehouse2-bg.jpg) 0 0 / cover no-repeat;
+  background-position: center;
 }
 
 .background-about-us {
@@ -111,7 +150,7 @@ p {
 /* phone */
 @media (max-width: 575px) {
 
-  .mobile-view-no {
+  .phone-view-no {
     display: none;
     visibility: collapse;
   }
@@ -123,15 +162,21 @@ p {
   body {
     font-size: $paragraph-font-size-mobile;
   }
-
   .header-logo-size {
     width: 120px;
     min-width: 100px;
   }
-
-  .body-logo-size {
+  .body-logo-size-half {
     width: 320px;
-    min-width: 250px;
+    min-width: 300px;
+  }
+  .body-logo-size-full {
+    width: 50%;
+    min-width: 300px;
+  }
+  .mision-vision-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   /* hero section */
@@ -157,10 +202,60 @@ p {
   }
 
 }
-/* tablet */
-@media (min-width: 576px) and (max-width: 991px) {
 
-  .mobile-view-no {
+/* tablet small*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .tablet-small-view-no {
+    display: none;
+    visibility: collapse;
+  }
+  h1 {
+    font-size: $tittle-font-size-mobile;
+  }
+  body {
+    font-size: $paragraph-font-size-mobile;
+  }
+  .header-logo-size {
+    width: 120px;
+    min-width: 100px;
+  }
+  .body-logo-size-half {
+    width: 320px;
+    min-width: 300px;
+  }
+  .body-logo-size-full {
+    width: 50%;
+    min-width: 300px;
+  }
+  .mision-vision-image {
+    width: 50%;
+  }
+
+  /* hero section */
+  #particles-js {
+    height: 45vh;
+  }
+  .hero-panel {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+  }
+  //end hero section
+
+  .body-logo-margin{
+    margin-top: 50px;
+  }
+  .about-us-container {
+    min-width: 250px;
+    width: 340px;
+  }
+}
+
+/* tablet medium*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .tablet-medium-view-no {
     display: none;
     visibility: collapse;
   }
@@ -178,9 +273,18 @@ p {
     min-width: 100px;
   }
 
-  .body-logo-size {
+  .body-logo-size-half {
     width: 320px;
     min-width: 250px;
+  }
+
+  .body-logo-size-full {
+    width: 50%;
+    min-width: 350px;
+  }
+
+  .mision-vision-image {
+    width: 50%;
   }
 
   /* hero section */
@@ -199,6 +303,8 @@ p {
   .body-logo-margin{
     margin-top: 50px;
   }
+
+
 
   .about-us-container {
     min-width: 250px;
@@ -236,9 +342,18 @@ p {
     min-width: 100px;
   }
 
-  .body-logo-size {
+  .body-logo-size-half {
     width: 80%;
     min-width: 350px;
+  }
+
+  .body-logo-size-full {
+    width: 50%;
+    min-width: 350px;
+  }
+
+  .mision-vision-image {
+    width: 50%;
   }
 
   .hero-tittle {
