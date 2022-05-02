@@ -583,6 +583,17 @@ input[name=panel]:checked + .collapsible {
     margin-right: 30px;
   }
 }
+/* breadcrumb */
+.breadcrumb-item {
+  color: #616771;
+}
+.breadcrumb-item a {
+  color: #616771;
+}
+.breadcrumb-item.active {
+  color: #1E8946;
+}
+
 /* GENERAL PRE HEADER */
 .pre-header {
   background-color: #444444;

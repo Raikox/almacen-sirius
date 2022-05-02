@@ -375,3 +375,15 @@ input[name='panel'] {
   }
 
 }
+
+/* breadcrumb */
+.breadcrumb-item {
+  color: $paragraph-color;
+  a {
+    color: $paragraph-color;
+  }
+  &.active {
+    color: $main-color;
+  }
+}
+
