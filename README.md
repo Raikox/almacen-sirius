@@ -13,6 +13,12 @@ Website for Warehaouse presentation.
 
 ## Changelog
 
+### 05-02-2022 Seo
+- Full Seo Implementation.
+- Limit h1 tag to one per page.
+- Breadcumbs on all pages.
+- Full "Empresa" page implementation.
+
 ### 04-27-2022 Sass
 - Full Sass implementation on website.
 - Use of nested, variables and import implementations.
