@@ -13,6 +13,12 @@ Website for Warehaouse presentation.
 
 ## Changelog
 
+### 05-03-2022 Web site deploy
+- Full Almacenaje page implementation.
+- Web site deploy on server. https://almacensirius.com/
+- Add SSL to domain.
+- Add sitemap.xml
+
 ### 05-02-2022 Seo
 - Full Seo Implementation.
 - Limit h1 tag to one per page.
