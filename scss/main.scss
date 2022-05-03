@@ -201,6 +201,13 @@ a {
     width: 340px;
   }
 
+  //contacto pre-footer
+  .column-width {
+    min-width: 80vw;
+  }
+  .fix-margin {
+    margin-top: 8px;
+  }
 }
 
 /* tablet small*/
@@ -250,6 +257,15 @@ a {
     min-width: 250px;
     width: 340px;
   }
+
+  //contacto pre-footer
+  .column-width {
+    min-width: 400px;
+  }
+  .fix-margin {
+    margin-top: 8px;
+  }
+
 }
 
 /* tablet medium*/
