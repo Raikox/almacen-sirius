@@ -115,10 +115,6 @@ h1, h2 {
   text-align: center;
 }
 
-h2 {
-  font-size: 60px;
-}
-
 h3 {
   font-weight: 400;
   color: #191919;
@@ -194,6 +190,11 @@ a {
   background-position: center;
 }
 
+.background-world {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../images/mundi2-bg.jpg) 0 0/cover no-repeat;
+  background-position: center;
+}
+
 .about h2 {
   color: #191919;
 }
@@ -201,6 +202,10 @@ a {
 .background-contact {
   background: linear-gradient(90deg, rgba(68, 68, 68, 0.8268441166) 0%, rgba(68, 68, 68, 0.8324463574) 100%), url(../images/truck-fast.jpg) 0 0/cover no-repeat;
   background-position: center;
+}
+
+.simple-background {
+  background-color: #F7F7F7;
 }
 
 .page-hero {
@@ -371,6 +376,13 @@ a {
     min-height: 370px;
   }
 }
+/* min card */
+.min-card {
+  padding: 20px 20px;
+  min-height: 150px;
+  min-width: 250px;
+}
+
 /* accordion */
 input[name=panel] {
   display: none;
@@ -662,6 +674,45 @@ input[name=panel]:checked + .collapsible {
   color: #1E8946;
 }
 
+/* sliding background */
+.sliding-container {
+  overflow: hidden;
+}
+
+.sliding-background {
+  background: url("../images/mundi3-bg.jpg") repeat-x;
+  background-position: center center;
+  height: 500px;
+  width: 7680px;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2560px, 0, 0);
+  }
+}
+.sling-content {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  right: 20%;
+}
+
+/* step box */
+.step-box {
+  background: url("../images/step-bg.png") no-repeat;
+  color: #1E8946;
+}
+
+.step-icon {
+  min-width: 180px;
+  min-height: 180px;
+}
+
 /* GENERAL PRE HEADER */
 .pre-header {
   background-color: #444444;
@@ -700,11 +751,11 @@ input[name=panel]:checked + .collapsible {
 }
 
 .mail-image-one-footer {
-  min-width: 230px;
+  min-width: 225px;
 }
 
 .mail-image-two-footer {
-  min-width: 300px;
+  min-width: 298px;
 }
 
 .footer-icon {
@@ -759,6 +810,10 @@ input[name=panel]:checked + .collapsible {
 
   h1, h2 {
     font-size: 40px;
+  }
+
+  h2 {
+    font-size: 35px;
   }
 
   body {
@@ -825,6 +880,10 @@ input[name=panel]:checked + .collapsible {
     font-size: 40px;
   }
 
+  h2 {
+    font-size: 35px;
+  }
+
   body {
     font-size: 16px;
   }
@@ -885,7 +944,11 @@ input[name=panel]:checked + .collapsible {
   }
 
   h1, h2 {
-    font-size: 40px;
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
   }
 
   body {
@@ -949,6 +1012,10 @@ input[name=panel]:checked + .collapsible {
 
   h1, h2 {
     font-size: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
   }
 
   body {

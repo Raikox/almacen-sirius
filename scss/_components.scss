@@ -145,6 +145,13 @@
   }
 }
 
+/* min card */
+.min-card {
+  padding: 20px 20px;
+  min-height: 150px;
+  min-width: 250px;
+}
+
 /* accordion */
 input[name='panel'] {
   display: none;
@@ -454,3 +461,38 @@ input[name='panel'] {
   }
 }
 
+/* sliding background */
+.sliding-container {
+  overflow: hidden;
+}
+.sliding-background {
+  background: url("../images/mundi3-bg.jpg") repeat-x;
+  background-position: center center;
+  height: 500px;
+  width: 7680px;
+  animation: slide 60s linear infinite;
+}
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2560px, 0, 0);
+  }
+}
+.sling-content {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  right: 20%;
+}
+
+/* step box */
+.step-box {
+  background: url("../images/step-bg.png") no-repeat;
+  color: $main-color;
+}
+.step-icon {
+  min-width: 180px;
+  min-height: 180px;
+}

@@ -28,7 +28,6 @@ h1 {
 
 h2 {
   @extend h1;
-  font-size: $title-font-size-desktop;
 }
 
 h3 {
@@ -106,6 +105,11 @@ a {
   background-position: center;
 }
 
+.background-world {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../images/mundi2-bg.jpg) 0 0 / cover no-repeat;
+  background-position: center;
+}
+
 .about {
   h2 {
     color: $secondary-color;
@@ -115,6 +119,10 @@ a {
 .background-contact {
   background: linear-gradient(90deg, rgba(68,68,68,0.8268441165528712) 0%, rgba(68,68,68,0.8324463574492297) 100%), url(../images/truck-fast.jpg) 0 0 / cover no-repeat;
   background-position: center;
+}
+
+.simple-background {
+  background-color: #F7F7F7;
 }
 
 .page-hero {
@@ -154,11 +162,12 @@ a {
     display: none;
     visibility: collapse;
   }
-
   h1 {
-    font-size: $tittle-font-size-mobile;
+    font-size: $page-title-font-size-mobile;
   }
-
+  h2 {
+    font-size: $title-font-size-mobile;
+  }
   body {
     font-size: $paragraph-font-size-mobile;
   }
@@ -217,7 +226,10 @@ a {
     visibility: collapse;
   }
   h1 {
-    font-size: $tittle-font-size-mobile;
+    font-size: $page-title-font-size-mobile;
+  }
+  h2 {
+    font-size: $title-font-size-mobile;
   }
   body {
     font-size: $paragraph-font-size-mobile;
@@ -277,9 +289,11 @@ a {
   }
 
   h1 {
-    font-size: $tittle-font-size-mobile;
+    font-size: $page-title-font-size-desktop;
   }
-
+  h2 {
+    font-size: $title-font-size-desktop;
+  }
   body {
     font-size: $paragraph-font-size-mobile;
   }
@@ -346,9 +360,11 @@ a {
   }
 
   h1 {
+    font-size: $page-title-font-size-desktop;
+  }
+  h2 {
     font-size: $title-font-size-desktop;
   }
-
   body {
     font-size: $paragraph-font-size-desktop;
   }
