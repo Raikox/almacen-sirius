@@ -14,6 +14,7 @@ Website for Warehaouse presentation.
 ## Changelog
 
 ### 05-03-2022 Web site deploy
+- Logistica page implementation.
 - Full Almacenaje page implementation.
 - Web site deploy on server. https://almacensirius.com/
 - Add SSL to domain.
