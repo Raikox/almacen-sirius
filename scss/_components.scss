@@ -122,6 +122,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .rainbow-card-schedule {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 22rem;
+    min-height: 300px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .rainbow-card {
@@ -131,17 +137,33 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .rainbow-card-schedule {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 22rem;
+    min-height: 300px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .rainbow-card {
     width: 20rem;
     min-height: 370px;
   }
+  .rainbow-card-schedule {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 22rem;
+    min-height: 300px;
+  }
 }
 @media (min-width: 992px) {
   .rainbow-card {
     width: 25rem;
     min-height: 370px;
+  }
+  .rainbow-card-schedule {
+    width: 22rem;
+    min-height: 300px;
   }
 }
 
@@ -461,32 +483,6 @@ input[name='panel'] {
   }
 }
 
-/* sliding background */
-.sliding-container {
-  overflow: hidden;
-}
-.sliding-background {
-  background: url("../images/mundi3-bg.jpg") repeat-x;
-  background-position: center center;
-  height: 500px;
-  width: 7680px;
-  animation: slide 60s linear infinite;
-}
-@keyframes slide{
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-2560px, 0, 0);
-  }
-}
-.sling-content {
-  position: absolute;
-  top: 60%;
-  left: 20%;
-  right: 20%;
-}
-
 /* step box */
 .step-box {
   background: url("../images/step-bg.png") no-repeat;
@@ -495,4 +491,191 @@ input[name='panel'] {
 .step-icon {
   min-width: 180px;
   min-height: 180px;
+}
+
+/* contact map */
+.contact-map {
+  width: 100%;
+}
+.map-fix-space {
+  margin-bottom: -6px;
+}
+
+/* personal card */
+.card-personal-image {
+  width: 150px;
+  min-width: 100px;
+}
+.card-personal-data {
+  min-width: 377px;
+  p { //reset p properties
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.card-mail-1 {
+  min-width: 250px;
+}
+.card-mail-2 {
+  min-width: 335px;
+}
+@media (max-width: 575px) {
+  .card-personal-data-container {
+    text-align: center;
+    justify-content: center;
+  }
+  .card-personal-data {
+    margin-top: 20px;
+
+    p { //reset p properties
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .card-personal-contact {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+    p {
+      margin-top: 5px;
+      margin-left: 0;
+    }
+  }
+  .card-personal-contact-icon {
+    margin-top: 10px;
+  }
+  .card-mail-1 {
+    min-width: 215px;
+    width: 215px;
+  }
+  .card-mail-2 {
+    min-width: 300px;
+    width: 300px;
+  }
+  .card-data-space {
+    margin-top: 5px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .card-personal-data-container {
+    text-align: center;
+    justify-content: center;
+  }
+  .card-personal-data {
+    margin-top: 20px;
+
+    p { //reset p properties
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .card-personal-contact {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-mail-1 {
+    min-width: 215px;
+  }
+  .card-mail-2 {
+    min-width: 300px;
+  }
+  .card-data-space {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .card-personal-data-container {
+    text-align: center;
+    justify-content: center;
+  }
+  .card-personal-data {
+    margin-top: 20px;
+
+    p { //reset p properties
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .card-personal-contact {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* contact form */
+.form-control:focus{
+  border-color: $main-color;
+  box-shadow: 0 0 0 0.25rem rgb(30 137 70 / 25%)
+}
+
+.form-container {
+  min-width: 60vw;
+}
+.form-header {
+  min-width: 190px;
+  h3 {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+.form-header-text {
+  flex-direction: column;
+  div {
+    margin-right: 0;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+.form-button {
+  justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-container {
+    min-width: 400px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .form-container {
+    min-width: 450px;
+  }
+
+}
+@media (min-width: 1200px) {
+  .form-container {
+    min-width: 600px;
+  }
+}
+@media (min-width: 768px) {
+  .form-header {
+    h3 {
+      text-align: left;
+    }
+  }
+  .form-header-text {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    div {
+      margin-right: 0;
+    }
+    p {
+      margin-left: 10px;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .form-button {
+    justify-content: left;
+  }
 }

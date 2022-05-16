@@ -79,6 +79,10 @@ a {
   background-color: $main-color-opacity;
 }
 
+.background-map-color {
+ background-color: #F1F3F4;
+}
+
 .fix {
   display: flex;
   align-content: center;
@@ -106,7 +110,12 @@ a {
 }
 
 .background-world {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../images/mundi2-bg.jpg) 0 0 / cover no-repeat;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%), url(../images/mundi2-bg.jpg) 0 0 / cover no-repeat;
+  background-position: center;
+}
+
+.background-form {
+  background-image: url("../images/mundi-bg-demo.png");
   background-position: center;
 }
 
@@ -148,6 +157,12 @@ a {
 }
 .page-hero .container {
   position: relative;
+}
+
+.image-fit {
+  width: 100%;
+  height: 100%;
+  object-position: center;
 }
 
 @import "components";
