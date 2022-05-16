@@ -679,3 +679,17 @@ input[name='panel'] {
     justify-content: left;
   }
 }
+
+/* scroll up */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  color: $main-color;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    color: $main-color-contrast;
+    transform: translateY(-4px);
+  }
+}

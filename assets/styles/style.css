@@ -931,6 +931,20 @@ input[name=panel]:checked + .collapsible {
     justify-content: left;
   }
 }
+/* scroll up */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  color: #1E8946;
+  transition: all 0.3s ease 0s;
+}
+.back-to-top:hover {
+  color: #00C897;
+  transform: translateY(-4px);
+}
+
 /* GENERAL PRE HEADER */
 .pre-header {
   background-color: #444444;
