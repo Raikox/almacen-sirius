@@ -746,7 +746,7 @@ input[name=panel]:checked + .collapsible {
 }
 
 .card-personal-data {
-  min-width: 377px;
+  min-width: 300px;
 }
 .card-personal-data p {
   text-align: left;
