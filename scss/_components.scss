@@ -162,8 +162,9 @@
     min-height: 370px;
   }
   .rainbow-card-schedule {
-    width: 22rem;
+    width: 20rem;
     min-height: 300px;
+    height: 300px;
   }
 }
 
@@ -583,7 +584,7 @@ input[name='panel'] {
     min-width: 215px;
   }
   .card-mail-2 {
-    min-width: 300px;
+    min-width: 290px;
   }
   .card-data-space {
     margin-left: 10px;
@@ -591,21 +592,23 @@ input[name='panel'] {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .card-personal-data-container {
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    margin-left: 60px;
   }
   .card-personal-data {
-    margin-top: 20px;
-
     p { //reset p properties
-      text-align: center;
+      text-align: left;
       margin-top: 0;
       margin-bottom: 0;
     }
   }
   .card-personal-contact {
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .card-personal-data-container {
+    margin-left: 80px;
   }
 }
 
@@ -614,7 +617,6 @@ input[name='panel'] {
   border-color: $main-color;
   box-shadow: 0 0 0 0.25rem rgb(30 137 70 / 25%)
 }
-
 .form-container {
   min-width: 60vw;
 }
@@ -647,7 +649,6 @@ input[name='panel'] {
   .form-container {
     min-width: 450px;
   }
-
 }
 @media (min-width: 1200px) {
   .form-container {
@@ -656,13 +657,14 @@ input[name='panel'] {
 }
 @media (min-width: 768px) {
   .form-header {
+
+    align-items: normal !important;
     h3 {
       text-align: left;
     }
   }
   .form-header-text {
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     margin-top: 16px;
     div {
