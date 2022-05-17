@@ -18,6 +18,7 @@ Website for Warehaouse presentation.
 - Images optimization.
 - "To up" button in all pages.
 - Update controls for aria-accessibility.
+- Build manifest.json
 
 ### 05-03-2022 Web site deploy
 - Logistica page implementation.
