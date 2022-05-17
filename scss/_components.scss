@@ -683,13 +683,23 @@ input[name='panel'] {
 /* scroll up */
 .back-to-top {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 15px;
+  right: 15px;
   display: none;
   color: $main-color;
   transition: all 0.3s ease 0s;
   &:hover {
     color: $main-color-contrast;
     transform: translateY(-4px);
+  }
+}
+.button-top {
+  min-width: 40px;
+  width: 40px;
+}
+@media (min-width: 576px) {
+  .back-to-top {
+    bottom: 25px;
+    right: 25px;
   }
 }

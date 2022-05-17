@@ -934,8 +934,8 @@ input[name=panel]:checked + .collapsible {
 /* scroll up */
 .back-to-top {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 15px;
+  right: 15px;
   display: none;
   color: #1E8946;
   transition: all 0.3s ease 0s;
@@ -945,6 +945,17 @@ input[name=panel]:checked + .collapsible {
   transform: translateY(-4px);
 }
 
+.button-top {
+  min-width: 40px;
+  width: 40px;
+}
+
+@media (min-width: 576px) {
+  .back-to-top {
+    bottom: 25px;
+    right: 25px;
+  }
+}
 /* GENERAL PRE HEADER */
 .pre-header {
   background-color: #444444;
