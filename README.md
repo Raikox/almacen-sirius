@@ -13,6 +13,12 @@ Website for Warehaouse presentation.
 
 ## Changelog
 
+### 17-05-2022
+- Contact page implementation.
+- Images optimization.
+- "To up" button in all pages.
+- Update controls for aria-accessibility.
+
 ### 05-03-2022 Web site deploy
 - Logistica page implementation.
 - Full Almacenaje page implementation.
